@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Mingqin Museum" content="width=device-width, initial-scale=1.0">
+    <title>Mingqin Museum</title>
+    <link rel="stylesheet" href="./design.css">
+    <head>
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+
+    <!-- header area -->
+    <header>
+        <a href="#" class="logo">名琴博物馆</a>
+        <nav class="main-nav">
+            <div class="nav-serch">
+                <input type="text" placeholder="Search...">
+                
+            </div>
+            <div>
+                <ul class="nav-Language">
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">中文</a></li>
+                    <li><a href="#">日本語</a></li>
+                </ul>
+            </div>
+
+        </nav>
+           
+    </header>
+
+    <!-- navigation area -->
+    <section class="nav-container" id="nav-container">
+
+        <!-- left navigation area -->
+            <div class="sec-container" id="sec-container">
+                <ul class="fir-ul" id="fir-ul">
+                    <li ><a href="violin.html">小提琴弓</a></li>
+                    <li><a href="#">小提琴</a></li>
+                    <li><a href="#">中提琴</a></li>
+                    <li><a href="#">新品</a></li>
+                </ul >
+                <ul class="sec-ul" id="sec-ul">
+                    <li><a href="#">聯絡 我們</a></li>
+                    <li><a href="#">關於 我們</a></li>
+                    <li><a href="#">服務 條款</a></li>
+                    <li><a href="#">隱私權 政策</a></li>
+                    <li><a href="#">常問問題</a></li>
+                    <li><a href="#">部落格</a></li>
+                </ul>
+
+            </div>
+
+            <div class="single-product-img">
+                
+                    <div class="small-img-gp">
+                        <div class="small-img-col">
+                            <img src="./img/V-s1.jpg" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="./img/V-s2.jpg" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="./img/V-s3.jpg" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="./img/V-s4.jpg" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="./img/V-s5.jpg" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="./img/V-s6.jpg" width="100%" class="small-img">
+                        </div>
+
+                    </div>
+                    
+                    <img src="./img/V-s1.jpg" width="100%" class="Main-img" id="Main-img">
+            </div>
+            <div class="single-product-details">
+                <h3>里卡多·安东尼亚齐</h3>
+                <p>小提琴制造者 <br>(1853 – 1912) <br><br>
+                    Riccardo Antoniazzi是Ceruti的学生Gaetano Antoniazzi的儿子，他出生在克雷莫纳，
+                    1870年左右搬到米兰。1880年，他去了尼斯，可能是为Nicolò Bianchi工作，并于1886年返回。
+                    他的早期乐器是他父亲的风格，但他最好的、最具原创性的作品可以追溯到1888年左右，
+                    当时他在为他的前学生Leandro Bisiach工作。尽管Antoniazzi的工艺精湛，但他的职业生涯似乎被Bisiach的成功所掩盖，
+                    在他的一生中，他主要是为其他制造商工作。事实上，在他与Bisiach工作室工作期间，许多最好的乐器都没有签名。
+                    1904年后，Antoniazzi为Monzino and Sons公司工作，他的乐器对细节的关注较少，尤其是在清漆方面。
+                    然而，他这一时期的作品是今天最常为人所知的，并显示出伟大的个性。<br>
+
+                    安东尼奥齐的模型种类繁多，但他的清漆通常是黄橙色或深红色。
+                    除了以他首字母命名的品牌外，已知有四个不同的标签，这些标签可以追溯到他与蒙齐诺公司的时期。
+                    作为现代米兰学派的一位创始人，他有许多追随者和学生，包括费迪南多·加里贝尔蒂和加埃塔诺·斯卡拉博托。
+                    阅读更多价格历史 <br>
+                    - 这个制造商的拍卖记录是2014年10月的一把小提琴，价格为95,225美元。<br>
+                    - 68 拍卖价格结果。
+                </p>
+                <h4>價格：$ 1000</h4>
+                <button class="btn">加入購物車</button>
+            </div>
+        </div>
+           
+            
+
+
+    </section>
+
+    
+    <!-- footer area -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2023 Mingqin Museum. All rights reserved.</p>
+            <ul class="social-icons">
+                <li><a href="#"><i class='bx bxl-facebook'> Facebook</i></a></li>
+                <li><a href="#"><i class='bx bxl-twitter'> Twitter</i></a></li>
+                <li><a href="#"><i class='bx bxl-instagram'> Instagram</i></a></li>
+            </ul>
+        </div>
+
+    </footer>
+    <script>
+        var MainImg = document.getElementById("Main-img");
+        var smallimg = document.getElementsByClassName("small-img");
+
+        smallimg[0].onclick = function(){
+            MainImg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function(){
+            MainImg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function(){
+            MainImg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function(){
+            MainImg.src = smallimg[3].src;
+        }
+        smallimg[4].onclick = function(){
+            MainImg.src = smallimg[4].src;
+        }
+        smallimg[5].onclick = function(){
+            MainImg.src = smallimg[5].src;
+        }
+    </script>
+</body>
+</html>
