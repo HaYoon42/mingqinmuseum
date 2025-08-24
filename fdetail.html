@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Mingqin Museum" content="width=device-width, initial-scale=1.0">
+    <title>Mingqin Museum</title>
+    <link rel="stylesheet" href="./design.css">
+    <head>
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+
+    <!-- header area -->
+    <header>
+        <a href="#" class="logo">名琴博物馆</a>
+        <nav class="main-nav">
+            <div class="nav-serch">
+                <input type="text" placeholder="Search...">
+                
+            </div>
+            <div>
+                <ul class="nav-Language">
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">中文</a></li>
+                    <li><a href="#">日本語</a></li>
+                </ul>
+            </div>
+
+        </nav>
+           
+    </header>
+
+    <!-- navigation area -->
+    <section class="nav-container" id="nav-container">
+
+        <!-- left navigation area -->
+            <div class="sec-container" id="sec-container">
+                <ul class="fir-ul" id="fir-ul">
+                    <li ><a href="violin.html">小提琴弓</a></li>
+                    <li><a href="#">小提琴</a></li>
+                    <li><a href="#">中提琴</a></li>
+                    <li><a href="#">新品</a></li>
+                </ul >
+                <ul class="sec-ul" id="sec-ul">
+                    <li><a href="#">聯絡 我們</a></li>
+                    <li><a href="#">關於 我們</a></li>
+                    <li><a href="#">服務 條款</a></li>
+                    <li><a href="#">隱私權 政策</a></li>
+                    <li><a href="#">常問問題</a></li>
+                    <li><a href="#">部落格</a></li>
+                </ul>
+
+            </div>
+
+            <div class="single-product-img">
+                
+                    <div class="small-img-gp">
+                        <div class="small-img-col">
+                            <img src="./img/V-f1.jpg" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="./img/V-f2.jpg" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="./img/V-f3.jpg" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="./img/V-f4.jpg" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="./img/V-f5.jpg" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="./img/V-f6.jpg" width="100%" class="small-img">
+                        </div>
+
+                    </div>
+                    
+                    <img src="./img/V-f1.jpg" width="100%" class="Main-img" id="Main-img">
+            </div>
+            <div class="single-product-details">
+                <h3>塞斯托·羅基</h3>
+                <p>小提琴製造商 <br>(1909 – 1991) <br><br>
+                    根據塞斯托·羅基（Sesto Rocchi）自己的說法，
+                    他對小提琴製作的興趣源於童年時期的修理速成課程：在放下小提琴后，
+                    他試圖在不引起父母懷疑的情況下修理它。幾年後，羅基進入帕爾馬的小提琴製作學院，
+                    在那裡他與加埃塔諾·斯加拉博托一起學習。在與老師一起工作了幾年後，
+                    Rocchi 對 Sgarabotto 的老師 Leandro Bisiach 以及古典克雷莫納製造商對他作品的影響產生了興趣。
+                    他最終在米蘭與Bisiach家族一起工作和生活，
+                    在那裡他與家族收藏的古董傑作的直接接觸對他的工藝和模特的選擇產生了影響。
+                    在柏林的 Ströbl 和米蘭的 Monzino 公司工作了一段時間后，
+                    Rocchi 於 1939 年被召喚到前線。他回來發現他的模型被元素摧毀了，
+                    直到 1949 年才開始重建他的工作室。在隨後的幾年裡，他製作了許多樂器，
+                    尤其是基於斯特拉迪瓦里模型的四重奏，斯特拉迪瓦里成為他的首選靈感來源。
+                </p>
+                <h4>價格：$ 1000</h4>
+                <button class="btn">加入購物車</button>
+            </div>
+        </div>
+           
+            
+
+
+    </section>
+
+    
+    <!-- footer area -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2023 Mingqin Museum. All rights reserved.</p>
+            <ul class="social-icons">
+                <li><a href="#"><i class='bx bxl-facebook'> Facebook</i></a></li>
+                <li><a href="#"><i class='bx bxl-twitter'> Twitter</i></a></li>
+                <li><a href="#"><i class='bx bxl-instagram'> Instagram</i></a></li>
+            </ul>
+        </div>
+
+    </footer>
+    <script>
+        var MainImg = document.getElementById("Main-img");
+        var smallimg = document.getElementsByClassName("small-img");
+
+        smallimg[0].onclick = function(){
+            MainImg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function(){
+            MainImg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function(){
+            MainImg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function(){
+            MainImg.src = smallimg[3].src;
+        }
+        smallimg[4].onclick = function(){
+            MainImg.src = smallimg[4].src;
+        }
+        smallimg[5].onclick = function(){
+            MainImg.src = smallimg[5].src;
+        }
+    </script>
+</body>
+</html>
